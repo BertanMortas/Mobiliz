@@ -1,0 +1,8 @@
+rootProject.name = 'Mobiliz'
+include 'AuthService'
+include 'ConfigServer'
+include 'UserProfileService'
+include 'MailService'
+include 'CarService'
+include 'CarAuthService'
+
