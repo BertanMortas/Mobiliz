@@ -36,8 +36,8 @@ public class GlobalExceptionHandler {
         return ResponseEntity.ok("Beklenmeyen bir hata olustu: " + ex.getMessage());
     }
 
-    @ExceptionHandler(CarManagerException.class)
-    public ResponseEntity<ErrorMessage> handleManagerException(CarManagerException ex) {
+    @ExceptionHandler(CarAuthManagerException.class)
+    public ResponseEntity<ErrorMessage> handleManagerException(CarAuthManagerException ex) {
         ErrorType errorType = ex.getErrorType();
         HttpStatus httpStatus = errorType.httpStatus;
         return new ResponseEntity<>(createError(errorType, ex), httpStatus);

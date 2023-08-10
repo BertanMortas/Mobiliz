@@ -3,16 +3,16 @@ package com.mobiliz.exception;
 import lombok.Getter;
 
 @Getter
-public class CarManagerException extends RuntimeException{
+public class CarAuthManagerException extends RuntimeException{
 
     private final ErrorType errorType;
 
-    public CarManagerException(ErrorType errorType, String customMessage) {
+    public CarAuthManagerException(ErrorType errorType, String customMessage) {
         super(customMessage);
         this.errorType = errorType;
     }
 
-    public CarManagerException(ErrorType errorType){
+    public CarAuthManagerException(ErrorType errorType){
         this.errorType = errorType;
     }
 }

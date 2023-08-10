@@ -23,6 +23,12 @@ public class GroupingController {
     public ResponseEntity<Grouping> create(@RequestBody CreateGroupingRequestDto dto){
         return ResponseEntity.ok(groupingService.create(dto));
     }
+
+    /**
+     * todo, take a control for add a new car that group
+     * @param dto
+     * @return
+     */
     @PutMapping(UPDATE)
     public ResponseEntity<Boolean> update(@RequestBody UpdateGroupingRequestDto dto){
         return ResponseEntity.ok(groupingService.update(dto));
